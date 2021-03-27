@@ -62,20 +62,20 @@ const Contact = () => {
           method="post"
           data-netlify="true"
           onSubmit="submit"
-          netlify
+         
         >
           <input type="hidden" name="form-name" value="form1"/>
         <div className="row">
          
             <div className="col-6">
 
-              <input className="collumn1 h-c4" type="text" name="name" placeholder="Your Name" />
+              <input type="text" name="name" placeholder="Your Name" />
 
 
             </div>
             <div className="col-6">
 
-              <input className="collumn1 h-c3" type="text" name="email" placeholder="Your Email" />
+              <input  type="text" name="email" placeholder="Your Email" />
 
 
             </div>
@@ -84,13 +84,13 @@ const Contact = () => {
 
             <div className="col1">
 
-              <input className="collumn2 h-c1" type="text" name="subject" placeholder="Your Subject" />
+              <input  type="text" name="subject" placeholder="Your Subject" />
 
 
             </div>
             <div className="col1">
 
-              <input className="collumn2 h-c2" type="text" name="message" placeholder="Your Message" />
+              <textarea type="text" name="message" placeholder="Your Message" ></textarea>
 
 
             </div>
