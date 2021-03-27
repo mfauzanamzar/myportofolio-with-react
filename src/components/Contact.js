@@ -59,17 +59,15 @@ const Contact = () => {
         </div>
         <form
           name="form1"
-          method="post"
-          data-netlify="true"
+          method="POST"
           onSubmit="submit"
-
-        >
+          netlify  >
           <input type="hidden" name="form-name" value="form1" />
           <p>
             <label>Name <input type="text" name="name" /></label>
           </p>
           <p>
-            <label>Email <input type="email" name="email" /></label>
+            <label>Email <input type="email" name="emailn" /></label>
           </p>
           <p>
             <button type="submit">Send</button>
