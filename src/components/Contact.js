@@ -64,6 +64,7 @@ const Contact = () => {
           onSubmit="submit"
           netlify
         >
+          <input type="hidden" name="form-name" value="contact"/>
         <div className="row">
          
             <div className="col-6">
