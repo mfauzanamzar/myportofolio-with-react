@@ -68,13 +68,13 @@ const Contact = () => {
          
             <div className="col-6">
 
-              <input className="collumn1 h-c4" type="text" placeholder="Your Name" />
+              <input className="collumn1 h-c4" type="text" name="name" placeholder="Your Name" />
 
 
             </div>
             <div className="col-6">
 
-              <input className="collumn1 h-c3" type="text" placeholder="Your Email" />
+              <input className="collumn1 h-c3" type="text" name="email" placeholder="Your Email" />
 
 
             </div>
@@ -83,13 +83,13 @@ const Contact = () => {
 
             <div className="col1">
 
-              <input className="collumn2 h-c1" type="text" placeholder="Your Subject" />
+              <input className="collumn2 h-c1" type="text" name="subject" placeholder="Your Subject" />
 
 
             </div>
             <div className="col1">
 
-              <input className="collumn2 h-c2" type="text" placeholder="Your Message" />
+              <input className="collumn2 h-c2" type="text" name="message" placeholder="Your Message" />
 
 
             </div>
