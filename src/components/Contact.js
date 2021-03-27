@@ -90,14 +90,14 @@ const Contact = () => {
             </div>
             <div className="col1">
 
-              <textarea type="text" name="message" placeholder="Your Message" ></textarea>
+              <textarea name="message" placeholder="Your Message" ></textarea>
 
 
             </div>
          
         </div>
        
-        <button type="submit" className="btn_contact btn-outline">Send Message</button>
+        <button type="submit" >Send Message</button>
 
         </form>
 
