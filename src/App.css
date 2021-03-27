@@ -486,6 +486,16 @@ form{
   width: 100%;
 }
 
+textarea{
+  background-color: #d0efff;
+  border-radius: 6px;
+  padding: 20px 30px;
+  outline: none;
+  border-style: none;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
 @media(max-width: 765px){
   .container{
     width: 100%;

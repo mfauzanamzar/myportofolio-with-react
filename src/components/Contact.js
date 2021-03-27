@@ -8,7 +8,7 @@ const Contact = () => {
     text: "Web Developer",
     image: "/images/ucan2.png"
   });
-
+  
 
   const [cont] = React.useState([
     {
@@ -57,21 +57,48 @@ const Contact = () => {
             </div>
           ))}
         </div>
-        <form
+        <form 
           name="form1"
-          method="POST"
+          method="post"
+          data-netlify="true"
           onSubmit="submit"
-          data-netlify="true"  >
-          <input type="hidden" name="form-name" value="form1" />
-          <p>
-            <label>Name <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Email <input type="email" name="emailn" /></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+         
+        >
+          <input type="hidden" name="form-name" value="form1"/>
+        <div className="row">
+         
+            <div className="col-6">
+
+              <input className="collumn1 h-c4" type="text" name="name" placeholder="Your Name" />
+
+
+            </div>
+            <div className="col-6">
+
+              <input className="collumn1 h-c3" type="text" name="email" placeholder="Your Email" />
+
+
+            </div>
+
+
+
+            <div className="col1">
+
+              <input className="collumn2 h-c1" type="text" name="subject" placeholder="Your Subject" />
+
+
+            </div>
+            <div className="col1">
+
+              <textarea className="collumn2 h-c2" name="message" placeholder="Your Message" ></textarea>
+
+
+            </div>
+         
+        </div>
+       
+        <button type="submit" className="btn_contact btn-outline">Send Message</button>
+
         </form>
 
       </div>
