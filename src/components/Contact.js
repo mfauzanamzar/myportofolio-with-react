@@ -58,13 +58,13 @@ const Contact = () => {
           ))}
         </div>
         <form 
-          name="form1"
+          name="form2"
           method="post"
           data-netlify="true"
           onSubmit="submit"
          
         >
-          <input type="hidden" name="form-name" value="form1"/>
+          <input type="hidden" name="form-name" value="form2"/>
         <div className="row">
          
             <div className="col-6">
