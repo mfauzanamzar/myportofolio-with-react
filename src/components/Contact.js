@@ -17,7 +17,7 @@ const Contact = () => {
       icon: <FaMapMarked />,
       text:
         "Makassar, Sulawesi Selatan.",
-      link: "https://goo.gl/maps/bNutsXBkKWMQ3cp47"
+      link: "https://goo.gl/maps/TNa3AgsyCdTLKdbg8"
     },
     {
       id: 2,
