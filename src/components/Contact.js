@@ -62,6 +62,7 @@ const Contact = () => {
           method="post"
           data-netlify="true"
           onSubmit="submit"
+          netlify
         >
         <div className="row">
          
