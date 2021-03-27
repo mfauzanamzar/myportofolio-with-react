@@ -58,13 +58,17 @@ const Contact = () => {
           ))}
         </div>
         <form 
-          name="form2"
+          name="form3"
           method="post"
           data-netlify="true"
           onSubmit="submit"
+          data-netlify-honeypot="bot-field"
          
         >
-          <input type="hidden" name="form-name" value="form2"/>
+          <input type="hidden" name="form-name" value="form3"/>
+          <div hidden>
+            <input name="bot-field"/>
+          </div>
         <div className="row">
          
             <div className="col-6">
