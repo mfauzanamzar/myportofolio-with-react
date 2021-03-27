@@ -58,13 +58,13 @@ const Contact = () => {
           ))}
         </div>
         <form 
-          name="contact"
+          name="form1"
           method="post"
           data-netlify="true"
           onSubmit="submit"
           netlify
         >
-          <input type="hidden" name="form-name" value="contact"/>
+          <input type="hidden" name="form-name" value="form1"/>
         <div className="row">
          
             <div className="col-6">
@@ -107,3 +107,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
