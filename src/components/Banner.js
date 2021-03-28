@@ -15,15 +15,14 @@ const Banner = () => {
           <div className="col-6">
             <div className="header_content">
               <div className="header_section">
-               
-                <h1>{state.title1} 
-                
-                <div className="header_section-nama">
-                    { state.title2}
-                </div>
-                
+                <div className="flex_name">
+                <h1 className="title1">{state.title1}              
+
                 </h1>
-                
+                <h1 className="header_section-nama"><div >
+                    {state.title2}
+                  </div></h1>
+                  </div>
                 <p>{state.text}</p>
 
                 <div className="header_buttons">
@@ -31,34 +30,32 @@ const Banner = () => {
                     My Portofolio
                   </a>
                   &nbsp;&nbsp;&nbsp;
-                  <a href="" className="btn btn-smart">
-                    <FaPlay className="play" />
-                  </a>
+                  
                 </div>
               </div>
             </div>
           </div>
           <div className="col-6">
-         
-          <div className="banner_img">
-          <div className="header_content2">
-              <img src={state.image} alt="man" />
-              
-              <ul className="header_ul">
+
+            <div className="banner_img">
+              <div className="header_content2">
+                <img src={state.image} alt="man" />
+                  
+                <ul className="header_ul">
                   <li>
                     <a href="https://www.instagram.com/mfauzanamzar_" className="bttn btn_ig"><FaInstagram /></a>
                   </li>
                   <li>
-                  <a href="https://github.com/mfauzanamzar" className="bttn btn_ig"><FaGithub /></a>
+                    <a href="https://github.com/mfauzanamzar" className="bttn btn_ig"><FaGithub /></a>
                   </li>
                   <li>
-                  <a href="https://www.linkedin.com/in/muhammad-fauzan-amzar-980699209" className="bttn btn_ig"><FaLinkedin /></a>
+                    <a href="https://www.linkedin.com/in/muhammad-fauzan-amzar-980699209" className="bttn btn_ig"><FaLinkedin /></a>
                   </li>
                 </ul>
+              </div>
             </div>
-          </div>
-            
-            
+
+
           </div>
         </div>
       </div>
