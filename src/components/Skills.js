@@ -4,7 +4,7 @@ import React from "react";
 const Skills = () => {
 
   return (
-    <div className="Skills">
+    <div id="skills" className="Skills">
       <div className="container">
         <div className="row">
           <div className="col-6">

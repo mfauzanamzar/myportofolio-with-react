@@ -9,7 +9,7 @@ const Banner = () => {
     image: "/images/ucan2.png"
   });
   return (
-    <header className="header">
+    <header id="home" className="header">
       <div className="container">
         <div className="row">
           <div className="col-6">
@@ -38,9 +38,9 @@ const Banner = () => {
           <div className="col-6">
 
             <div className="banner_img">
-              <div className="header_content2">
+              
                 <img src={state.image} alt="man" />
-                  
+                  <div className="tes1">
                 <ul className="header_ul">
                   <li>
                     <a href="https://www.instagram.com/mfauzanamzar_" className="bttn btn_ig"><FaInstagram /></a>
@@ -52,6 +52,7 @@ const Banner = () => {
                     <a href="https://www.linkedin.com/in/muhammad-fauzan-amzar-980699209" className="bttn btn_ig"><FaLinkedin /></a>
                   </li>
                 </ul>
+               
               </div>
             </div>
 

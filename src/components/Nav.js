@@ -1,8 +1,19 @@
 import React from "react";
 import { FaAlignJustify } from "react-icons/fa";
+import { Link } from 'react-scroll'
+
+
+
 
 const Nav = () => {
-  const [state, setState] = React.useState(true)
+  const [nav] = React.useState([
+    { id: 'home', navName: 'Home' },
+    { id: 'about', navName: 'About' },
+    { id: 'skills', navName: 'Skills' },
+    { id: 'contact', navName: 'Contact' }
+
+  ])
+  const [state, setState] = React.useState(false)
   return (
     <nav className="navbar">
       <div className="container">
@@ -12,24 +23,26 @@ const Nav = () => {
               <img src="/images/logo.png" alt="logo" />
             </div>
           </ul>
-          {state ? (<ul className="navbar_right">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Skills</a>
-            </li>
-            <li>
-              <a href="">Contact </a>
-            </li>
-          </ul> ):("")}
-          
+          <ul className="navbar_right">
+              {nav.map(nv => (
+                <li>
+                  <Link to={nv.id} spy={true} smooth={true}><a className="cursor">{nv.navName}</a></Link>
+                </li>
+              ))}
+            </ul>
+
+          {state ? (
+            <ul className="navbar_righthidden">
+              {nav.map(nv => (
+                <li>
+                  <Link to={nv.id} spy={true} smooth={true}><a className="cursor">{nv.navName}</a></Link>
+                </li>
+              ))}
+            </ul>) : ("")}
+
         </div>
       </div>
-      <div className="toggle"onClick={()=> setState(!state)}><FaAlignJustify/></div>
+      <div className="toggle" onClick={() => setState(!state)}><FaAlignJustify /></div>
     </nav>
   );
 };
