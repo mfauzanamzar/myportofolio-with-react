@@ -15,7 +15,7 @@ const Nav = () => {
   ])
   const [state, setState] = React.useState(false)
   return (
-    <nav className="navbar">
+    <nav className="navbar"s>
       <div className="container">
         <div className="navbar_container">
           <ul className="navbar_left">
