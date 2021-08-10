@@ -83,6 +83,11 @@ color: #2a9df4;
   margin: 0 auto;
 }
 
+.container_service{
+  width: 1200px;
+  margin: 0 auto;
+}
+
 
 
 .h-650{
@@ -555,12 +560,20 @@ textarea{
   .container{
     padding: 0 50px;
   }
+
+  .container_service{
+    padding: 20px;
+  }
 }
 
 @media(max-width: 769px){
   .container{
     width: 100%;
    
+  }
+
+  .container_service{
+    width: 100%;
   }
 
   .col-6{
@@ -577,6 +590,10 @@ textarea{
   }
 
   .navbar_right{
+    display: none;
+  }
+
+  .foto_skill{
     display: none;
   }
 

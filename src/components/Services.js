@@ -36,7 +36,7 @@ const Services = () => {
 
   return (
     <div className="services">
-      <div className="container">
+      <div className="container_service">
         <div className="services_header">
           <div data-aos="slide-right" className="common">
             <h3 className="heading">{header.mainHeader}</h3>

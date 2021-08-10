@@ -22,6 +22,7 @@ const Skills = () => {
                      src="/images/skill.png"
                      effect="blur"
                      alt="foto"
+                     className="foto_skill"
 
                 />
                 </div>
