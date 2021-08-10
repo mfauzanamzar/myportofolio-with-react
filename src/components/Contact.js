@@ -1,7 +1,14 @@
 import React from "react";
 import { FaMapMarked, FaPhone } from "react-icons/fa";
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const Contact = () => {
+
+  React.useEffect(() => {
+    Aos.init({ duration: 2000})
+     }, [])
+
   const [state] = React.useState({
     title1: "Hi, I am",
     title2: " Fauzan",
@@ -34,14 +41,14 @@ const Contact = () => {
     <div id="contact" className="Contact">
       <div className="container">
         <div className="contact_header">
-          <div className="common">
+          <div data-aos="fade-up" className="common">
             <h3 className="heading">HAVE ANY QUERY?</h3>
             <h1 className="mainHeader">Contact Me</h1>
             <div className="commonBorder"></div>
           </div>
         </div>
 
-        <div className="row">
+        <div data-aos="slide-right"  className="row">
           {cont.map(con => (
             <div className="col-6">
               <div className="contact_box">
@@ -57,7 +64,7 @@ const Contact = () => {
             </div>
           ))}
         </div>
-        <form 
+        <form  data-aos="fade-up"
           name="form3"
           method="post"
           data-netlify="true"

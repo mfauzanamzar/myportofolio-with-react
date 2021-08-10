@@ -1,7 +1,18 @@
 import React from "react";
 import { FaInstagram, FaPlay, FaGithub, FaLinkedin, FaGit } from "react-icons/fa";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import { Link } from 'react-scroll'
+import { useEffect } from "react";
 
 const Banner = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000})
+     }, [])
+
   const [state] = React.useState({
     title1: "Hi, I am",
     title2: " Fauzan",
@@ -12,10 +23,10 @@ const Banner = () => {
     <header id="home" className="header">
       <div className="container">
         <div className="row">
-          <div className="col-6">
+          <div data-aos="slide-right" className="col-6">
             <div className="header_content">
               <div className="header_section">
-                <div className="flex_name">
+                <div  className="flex_name">
                 <h1 className="title1">{state.title1}              
 
                 </h1>
@@ -26,9 +37,9 @@ const Banner = () => {
                 <p>{state.text}</p>
 
                 <div className="header_buttons">
-                  <a href="" className="btn btn-outline">
-                    My Portofolio
-                  </a>
+                  
+
+                  <Link to='services' spy={true} smooth={true}><a className="btn btn-outline btn_porto">My Portofolio</a></Link>
                   &nbsp;&nbsp;&nbsp;
                   
                 </div>
@@ -38,10 +49,15 @@ const Banner = () => {
           <div className="col-6">
 
             <div className="banner_img">
-              
-                <img src={state.image} alt="man" />
+                <LazyLoadImage
+                     src={state.image}
+                     effect="blur"
+                     alt="foto"
+
+                />
+             
                   <div className="tes1">
-                <ul className="header_ul">
+                <ul data-aos="fade-zoom-in" className="header_ul">
                   <li>
                     <a href="https://www.instagram.com/mfauzanamzar_" className="bttn btn_ig"><FaInstagram /></a>
                   </li>

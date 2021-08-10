@@ -1,6 +1,16 @@
 import React from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const About = () => {
+
+  React.useEffect(() => {
+    Aos.init({ duration: 2000})
+     }, [])
+
+
   const [header] = React.useState({
     subHeader: "About Me",
     text:
@@ -17,21 +27,28 @@ const About = () => {
   return (
     <div id="about" className="about">
       <div className="container">
-        <div className="common">
+        <div data-aos="fade" className="common">
           <h1 className="mainHeader">{header.subHeader}</h1>
         
         </div>
-        <div className="commonBorder"></div>
+        <div  className="commonBorder"></div>
       
-      <div className="row h-650 alignCenter">
+      <div className="row h-650 ">
         <div className="col-6">
-          <div className="about_img">
-            <img src="/images/ucann.png" alt="man" />
+          <div data-aos="fade-up" className="about_img">
+          <LazyLoadImage
+                     src="/images/ucann.png"
+                     effect="blur"
+                     alt="foto"
+                     className="foto_about"
+
+                />
+         
           </div>
         </div>
         <div className="col-6">
-          <div className="about_info">
-            <h1>Hi There</h1>
+          <div data-aos="slide-left" className="about_info">
+           
             <div className="about_info-p1">
               Saya adalah Seorang Mahasiswa Teknik Informatika, Universitas Hasanuddin. Sedang berfokus menjadi Front-End Developer, dan ingin melanjutkan mempelajari Back-End Deveoper.
             </div>

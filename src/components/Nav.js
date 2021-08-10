@@ -10,7 +10,9 @@ const Nav = () => {
     { id: 'home', navName: 'Home' },
     { id: 'about', navName: 'About' },
     { id: 'skills', navName: 'Skills' },
+    { id: 'services', navName: 'Portofolio' },
     { id: 'contact', navName: 'Contact' }
+   
 
   ])
   const [state, setState] = React.useState(false)

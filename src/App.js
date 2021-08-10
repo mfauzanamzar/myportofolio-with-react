@@ -13,9 +13,9 @@ export default class App extends Component {
       <div>
         <Nav />
         <Banner />
-        
         <About />
         <Skills />
+        <Services/>
         <Contact />
       </div>
     )
