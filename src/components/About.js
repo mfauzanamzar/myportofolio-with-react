@@ -47,7 +47,7 @@ const About = () => {
           </div>
         </div>
         <div className="col-6">
-          <div data-aos="slide-left" className="about_info">
+          <div data-aos="fade-up" className="about_info">
            
             <div className="about_info-p1">
               Saya adalah Seorang Mahasiswa Teknik Informatika, Universitas Hasanuddin. Sedang berfokus menjadi Front-End Developer, dan ingin melanjutkan mempelajari Back-End Deveoper.
